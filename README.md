@@ -43,8 +43,6 @@ Do budowy projektu wykorzystano sprawdzone i fundamentalne technologie webowe.
 
 ## 📂 Struktura Plików
 
-Przejrzysta i logiczna organizacja plików ułatwia zarządzanie i rozwój projektu.
-
 ```
 /
 ├── 📄 index.html
