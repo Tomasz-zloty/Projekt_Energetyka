@@ -68,3 +68,5 @@ Witryna została opublikowana za pomocą usługi **GitHub Pages**, co pozwala na
 ### 🌐 Link do strony
 Możesz uzyskać dostęp do w pełni funkcjonalnej wersji projektu pod adresem:
 
+https://tomasz-zloty.github.io/Projekt_Energetyka/fotowoltaika.html
+
