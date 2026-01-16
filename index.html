@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zielona Energia - Przyszłość Energetyki</title>
+    <meta name="description" content="Przewodnik po świecie odnawialnych źródeł energii. Odkryj, jak działają farmy fotowoltaiczne i wiatrowe, i dlaczego są kluczem do zrównoważonej przyszłości.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zielona Energia: Transformacja Energetyczna</h1>
+        <nav class="dropdown">
+            <button id="menu-btn" class="dropdown-btn">Menu</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <a href="index.html">Strona Główna</a>
+                <a href="fotowoltaika.html">Farmy Fotowoltaiczne</a>
+                <a href="wiatraki.html">Farmy Wiatrowe</a>
+                <a href="top3.html">Top 3</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Witaj w Świecie Odnawialnych Źródeł Energii</h2>
+            <p>Nasza planeta stoi przed wyzwaniem transformacji energetycznej. Celem jest zastąpienie paliw kopalnych czystymi, odnawialnymi źródłami, które nie degradują środowiska. Ta strona jest poświęcona dwóm filarom tej zmiany: <strong>energii słonecznej</strong> i <strong>energii wiatrowej</strong>.</p>
+            <div class="main-image-container">
+                <img src="img/oze.jpg" alt="Kolaj energetyki odnawialnej - wiatraki i panele słoneczne" class="main-photo">
+            </div>
+        </section>
+
+        <section id="o-projekcie">
+            <h2>O Stronie</h2>
+            <p>Ta strona ma na celu przybliżenie kluczowych technologii wykorzystywanych w nowoczesnej energetyce odnawialnej. Zapraszamy do zapoznania się z rozbudowanymi sekcjami tematycznymi, które w przystępny, a zarazem merytoryczny sposób opisują działanie, zalety i wyzwania związane z farmami fotowoltaicznymi i wiatrowymi.</p>
+        </section>
+
+        <section class="technologie-glowne">
+            <div class="tech-box">
+                <h3><a href="fotowoltaika.html">Farmy Fotowoltaiczne</a></h3>
+                <p>Dowiedz się, jak krzemowe ogniwa zamieniają światło słoneczne bezpośrednio w prąd elektryczny. Poznaj budowę paneli, rodzaje technologii i odkryj, czym jest agrowoltaika. Nasz artykuł szczegółowo wyjaśnia cały proces – od pojedynczego fotonu aż po energię w Twoim domu.</p>
+                <a href="fotowoltaika.html" class="button">Czytaj więcej o fotowoltaice</a>
+            </div>
+            <div class="tech-box">
+                <h3><a href="wiatraki.html">Farmy Wiatrowe</a></h3>
+                <p>Odkryj potęgę wiatru i zrozum, w jaki sposób potężne przetwarzają jego energię kinetyczną na megawaty czystej mocy. Na tej stronie znajdziesz informacje o budowie turbin, różnicach między lądowymi a morskimi farmami oraz faktach i mitach na temat ich wpływu na środowisko.</p>
+                <a href="wiatraki.html" class="button">Czytaj więcej o farmach wiatrowych</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Projekt na zaliczenie - Tomasz Złotkowski</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function(event) {
+            event.stopPropagation();
+            document.getElementById('dropdown-content').classList.toggle('show');
+        });
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
